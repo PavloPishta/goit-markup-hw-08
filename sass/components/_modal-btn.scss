@@ -1,0 +1,19 @@
+.modal-btn {
+    min-width: 216px;
+    padding: 10px 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--studio-button-text-color);
+    background-color: var(--studio-button-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            background-color: var(--studio-state-button-background-color);
+        }
+}
+
