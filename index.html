@@ -66,10 +66,10 @@
             </button>
             <ul class="menu-mobile list">
                 <li class="menu-mobile__item">
-                    <a href="" class="menu-mobile__link link menu-mobile_link-current">Студія</a>
+                    <a href="./index.html" class="menu-mobile__link link menu-mobile_link-current">Студія</a>
                 </li>
                 <li class="menu-mobile__item">
-                    <a href="" class="menu-mobile__link link">Портфоліо</a>
+                    <a href="./portfolio.html" class="menu-mobile__link link">Портфоліо</a>
                 </li>
                 <li class="menu-mobile__item">
                     <a href="" class="menu-mobile__link link">Контакти</a>
@@ -522,7 +522,8 @@
 
     <!--FOOTER-->
     <footer class="page-footer">
-        <div class="container page-footer__container">           
+        <div class="container page-footer__container">
+            <div class="contact-social-container">           
                 <div class="contact-container">
                     <div class="footer__text">
                     <a class="logo page-footer__logo link" href="./index.html" lang="en">Web<span class="logo__part-footer">Studio</span></a>
@@ -577,6 +578,7 @@
                     </li>
                   </ul> 
                 </div>
+                </div>
                 <div class="subscription-container">
                     <p class="social-media-subtitle">підпишіться на розсилку</p>
                     <form class="subscription-form" name="subscription_form" autocomplete="on" novalidate>
@@ -599,8 +601,9 @@
                 </svg>
             </button>
             
-                <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+                
                 <form class="contact-form">
+                    <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
                     <label class="contact-form__field">
                         <span class="contact-form-input-desc">Ім'я</span>
                         <span class="contact-form-wrapper">
@@ -649,11 +652,22 @@
                         placeholder="Введіть текст" 
                         ></textarea>
                     </label>
-
-                    <input id="user-policy" type="checkbox" name="user_policy" class="contact-form-checkbox visually-hidden">      
+                    <div class="policy">
+                    
+                        <label class="policy__label">
+                    
+                            <input class="policy__checkbox" type="checkbox" name=""" required />
+                    
+                            <span class="policy__description">Погоджуюся з розсилкою та приймаю
+                                <span><a href="" class="policy__link">Умови договору</a></span>
+                    
+                            </span>
+                        </label>
+                    </div>
+                    <!-- <input id="user-policy" type="checkbox" name="user_policy" class="contact-form-checkbox visually-hidden">      
                     <label for="user-policy" class="contact-form-checkbox-desc"
                        >Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-policy-link" href="#">Умови договору</a>
-                    </label>
+                    </label> -->
                     
                     <button type="submit" class="modal-btn modal-btn_contact-form-btn">
                     Відправити

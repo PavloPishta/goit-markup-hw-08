@@ -18,7 +18,8 @@
     <header class="page-header">
         <div class="container page-header__container">
             <nav class="page-nav">
-                <a class="logo page-header__logo link" href="./index.html" lang="en">Web<span class="logo__part-header">Studio</span></a>
+                <a class="logo page-header__logo link" href="./index.html" lang="en">Web<span
+                        class="logo__part-header">Studio</span></a>
                 <ul class="menu list">
                     <li class="menu__item">
                         <a class="menu__link link" href="./index.html">Студія</a>
@@ -31,6 +32,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
             <ul class="contact-list list">
                 <li class="contact-list__item">
                     <a class="contact-list__link link" href="mailto:info@devstudio.com">
@@ -47,6 +53,55 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+    
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-close-modal">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="menu-mobile list">
+                    <li class="menu-mobile__item">
+                        <a href="./index.html" class="menu-mobile__link link ">Студія</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="./portfolio.html" class="menu-mobile__link link menu-mobile_link-current">Портфоліо</a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="" class="menu-mobile__link link">Контакти</a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-contact-list list">
+                    <li class="mobile-contact-list__item">
+                        <a href="href=" tel:+380961111111"
+                            class="mobile-contact-list__link link mobile-contact-list_link-current">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contact-list__item">
+                        <a href="mailto:info@devstudio.com"
+                            class="mobile-contact-list__link mobile-contact-smaller-font  link">info@devstudio.com</a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Linkedln</a>
+                    </li>
+                </ul>
+    
+            </div>
         </div>
     </header>
     <!--UNIQUE PAGE CONTENT-->
@@ -101,17 +156,19 @@
                                 srcset="./images/portfolio/portfolio1-tablet.jpg 1x, ./images/portfolio/portfolio1-tablet@2x.jpg 2x" />
 
                             <source media="(max-width:767px)"
-                                srcset="./images/portfolio/portfolio1-mobile.webp 1x, ./images/portfolio/portfolio1-mobilep@2x.webp 2x"
+                                srcset="./images/portfolio/portfolio1-mobile.webp 1x, ./images/portfolio/portfolio1-mobile@2x.webp 2x"
                                 type="image/webp" />
                             <source media="(max-width:767px)"
                                 srcset="./images/portfolio/portfolio1-mobile.jpg 1x, ./images/portfolio/portfolio1-mobile@2x.jpg 2x" />
                         
                             <img class="employees-list__photo" src="./images/portfolio/portfolio1-mobile.jpg" alt="Технокряк">
                         </picture>
+                        <div class="portfolio-item-description">
                         <p class="overlay">
                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.
                         </p>
+                        </div>
                     </div>
                     <div class="portfolio-list-item-wrapper">
                         <h2 class="section-title portfolio-title">
@@ -140,7 +197,7 @@
                             srcset="./images/portfolio/portfolio2-tablet.jpg 1x, ./images/portfolio/portfolio2-tablet@2x.jpg 2x" />
                         
                         <source media="(max-width:767px)"
-                            srcset="./images/portfolio/portfolio2-mobile.webp 1x, ./images/portfolio/portfolio2-mobilep@2x.webp 2x"
+                            srcset="./images/portfolio/portfolio2-mobile.webp 1x, ./images/portfolio/portfolio2-mobile@2x.webp 2x"
                             type="image/webp" />
                         <source media="(max-width:767px)"
                             srcset="./images/portfolio/portfolio2-mobile.jpg 1x, ./images/portfolio/portfolio2-mobile@2x.jpg 2x" />
@@ -179,7 +236,7 @@
                             srcset="./images/portfolio/portfolio3-tablet.jpg 1x, ./images/portfolio/portfolio3-tablet@2x.jpg 2x" />
                         
                         <source media="(max-width:767px)"
-                            srcset="./images/portfolio/portfolio3-mobile.webp 1x, ./images/portfolio/portfolio3-mobilep@2x.webp 2x"
+                            srcset="./images/portfolio/portfolio3-mobile.webp 1x, ./images/portfolio/portfolio3-mobile@2x.webp 2x"
                             type="image/webp" />
                         <source media="(max-width:767px)"
                             srcset="./images/portfolio/portfolio3-mobile.jpg 1x, ./images/portfolio/portfolio3-mobile@2x.jpg 2x" />
@@ -218,7 +275,7 @@
                             srcset="./images/portfolio/portfolio4-tablet.jpg 1x, ./images/portfolio/portfolio4-tablet@2x.jpg 2x" />
                         
                         <source media="(max-width:767px)"
-                            srcset="./images/portfolio/portfolio4-mobile.webp 1x, ./images/portfolio/portfolio4-mobilep@2x.webp 2x"
+                            srcset="./images/portfolio/portfolio4-mobile.webp 1x, ./images/portfolio/portfolio4-mobile@2x.webp 2x"
                             type="image/webp" />
                         <source media="(max-width:767px)"
                             srcset="./images/portfolio/portfolio4-mobile.jpg 1x, ./images/portfolio/portfolio4-mobile@2x.jpg 2x" />
@@ -258,7 +315,7 @@
                                 srcset="./images/portfolio/portfolio5-tablet.jpg 1x, ./images/portfolio/portfolio5-tablet@2x.jpg 2x" />
                             
                             <source media="(max-width:767px)"
-                                srcset="./images/portfolio/portfolio5-mobile.webp 1x, ./images/portfolio/portfolio5-mobilep@2x.webp 2x"
+                                srcset="./images/portfolio/portfolio5-mobile.webp 1x, ./images/portfolio/portfolio5-mobile@2x.webp 2x"
                                 type="image/webp" />
                             <source media="(max-width:767px)"
                                 srcset="./images/portfolio/portfolio5-mobile.jpg 1x, ./images/portfolio/portfolio5-mobile@2x.jpg 2x" />
@@ -298,7 +355,7 @@
                                 srcset="./images/portfolio/portfolio6-tablet.jpg 1x, ./images/portfolio/portfolio6-tablet@2x.jpg 2x" />
                             
                             <source media="(max-width:767px)"
-                                srcset="./images/portfolio/portfolio6-mobile.webp 1x, ./images/portfolio/portfolio6-mobilep@2x.webp 2x"
+                                srcset="./images/portfolio/portfolio6-mobile.webp 1x, ./images/portfolio/portfolio6-mobile@2x.webp 2x"
                                 type="image/webp" />
                             <source media="(max-width:767px)"
                                 srcset="./images/portfolio/portfolio6-mobile.jpg 1x, ./images/portfolio/portfolio6-mobile@2x.jpg 2x" />
@@ -338,7 +395,7 @@
                                 srcset="./images/portfolio/portfolio7-tablet.jpg 1x, ./images/portfolio/portfolio7-tablet@2x.jpg 2x" />
                             
                             <source media="(max-width:767px)"
-                                srcset="./images/portfolio/portfolio7-mobile.webp 1x, ./images/portfolio/portfolio7-mobilep@2x.webp 2x"
+                                srcset="./images/portfolio/portfolio7-mobile.webp 1x, ./images/portfolio/portfolio7-mobile@2x.webp 2x"
                                 type="image/webp" />
                             <source media="(max-width:767px)"
                                 srcset="./images/portfolio/portfolio7-mobile.jpg 1x, ./images/portfolio/portfolio7-mobile@2x.jpg 2x" />
@@ -378,7 +435,7 @@
                                 srcset="./images/portfolio/portfolio8-tablet.jpg 1x, ./images/portfolio/portfolio8-tablet@2x.jpg 2x" />
                             
                             <source media="(max-width:767px)"
-                                srcset="./images/portfolio/portfolio8-mobile.webp 1x, ./images/portfolio/portfolio8-mobilep@2x.webp 2x"
+                                srcset="./images/portfolio/portfolio8-mobile.webp 1x, ./images/portfolio/portfolio8-mobile@2x.webp 2x"
                                 type="image/webp" />
                             <source media="(max-width:767px)"
                                 srcset="./images/portfolio/portfolio8-mobile.jpg 1x, ./images/portfolio/portfolio8-mobile@2x.jpg 2x" />
@@ -418,7 +475,7 @@
                             srcset="./images/portfolio/portfolio9-tablet.jpg 1x, ./images/portfolio/portfolio9-tablet@2x.jpg 2x" />
                         
                         <source media="(max-width:767px)"
-                            srcset="./images/portfolio/portfolio9-mobile.webp 1x, ./images/portfolio/portfolio9-mobilep@2x.webp 2x"
+                            srcset="./images/portfolio/portfolio9-mobile.webp 1x, ./images/portfolio/portfolio9-mobile@2x.webp 2x"
                             type="image/webp" />
                         <source media="(max-width:767px)"
                             srcset="./images/portfolio/portfolio9-mobile.jpg 1x, ./images/portfolio/portfolio9-mobile@2x.jpg 2x" />
@@ -448,58 +505,62 @@
     <!-- FOOTER -->
 <footer class="page-footer">
     <div class="container page-footer__container">
-        <div class="contact-container">
-            <a class="logo page-footer__logo link" href="./index.html" lang="en">Web<span
-                    class="logo__part-footer">Studio</span></a>
-            <address class="contact-footer-list">
-                <ul class="address-list list">
-                    <li class="address-list__item">
-                        <a class="address-list__link map link" href="https://goo.gl/maps/JqsKjMhWEJc1FXKQ9"
-                            target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+        <div class="contact-social-container">
+            <div class="contact-container">
+                <div class="footer__text">
+                    <a class="logo page-footer__logo link" href="./index.html" lang="en">Web<span
+                            class="logo__part-footer">Studio</span></a>
+                    <address class="contact-footer-list">
+                        <ul class="address-list list">
+                            <li class="address-list__item">
+                                <a class="address-list__link map link" href="https://goo.gl/maps/JqsKjMhWEJc1FXKQ9"
+                                    target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a class="address-list__link link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a class="address-list__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="social-media-container">
+                <p class="social-media-subtitle">
+                    приєднуйтесь
+                </p>
+                <ul class="social-media-list list">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="">
+                            <svg class="social-media-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="address-list__item">
-                        <a class="address-list__link link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="">
+                            <svg class="social-media-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="address-list__item">
-                        <a class="address-list__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="">
+                            <svg class="social-media-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="">
+                            <svg class="social-media-list__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
-        </div>
-        <div class="social-media-container">
-            <p class="social-media-subtitle">
-                приєднуйтесь
-            </p>
-            <ul class="social-media-list list">
-                <li class="social-media-list__item">
-                    <a class="social-media-list__link" href="">
-                        <svg class="social-media-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-media-list__item">
-                    <a class="social-media-list__link" href="">
-                        <svg class="social-media-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-media-list__item">
-                    <a class="social-media-list__link" href="">
-                        <svg class="social-media-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social-media-list__item">
-                    <a class="social-media-list__link" href="">
-                        <svg class="social-media-list__icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
         <div class="subscription-container">
             <p class="social-media-subtitle">підпишіться на розсилку</p>
@@ -514,5 +575,7 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
